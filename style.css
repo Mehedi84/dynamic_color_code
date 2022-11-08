@@ -3,4 +3,11 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
+}
+#hexvalue{
+    display: none;
+}
+.btn{
+    margin-right: 5px;
 }

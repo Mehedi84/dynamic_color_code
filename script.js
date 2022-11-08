@@ -15,5 +15,16 @@ function colorHexaChange()
     hexCode += hexNumber[randomIndex]
     document.getElementsByTagName("body")[0].style.background = "#"+ hexCode;
 }
-document.getElementById("hex").innerHTML = "#" + hexCode;
+document.getElementById("hexvalue").value = "#" + hexCode;
+
 }
+
+function myFunction(){
+//hexa code copy code start
+var copyText = document.getElementById("hexvalue");
+copyText.select();
+copyText.setSelectionRange(0, 99999); 
+navigator.clipboard.writeText(copyText.value);
+//hexa code copy code end
+}
+
